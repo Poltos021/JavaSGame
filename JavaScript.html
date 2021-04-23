@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рыбалка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section id="start" class="screen">
+            <h1>Fishing</h1>
+            <input type="text" placeholder="Your nickname" id="user">
+            <button id="startButton">GO!</button>
+        </section>
+        <section id="game" class="screen">
+            <div class="panel">
+                <p class="gamer" id="gamer">Nickname</p>
+                <p class="score" id="score">0</p>
+                <p class="timer" id="time">Time</p>
+            </div>
+        </section>
+        <section id="result" class="screen">
+            <h1>Your result:</h1>
+            <h1 id="total">0</h1>
+            <button class="repeatButton" id="restart">Repeat</button>
+        </section>
+    </main>
+<script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Goldman;
+    src: url("../fonts/Goldman-Bold.ttf");
+}
+*{
+    font-family: Goldman;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-top: 100px;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url("../img/trava-1.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 5%;
+
+}
+.screen{
+    background-color: #8f8fff;
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    border: solid 1px;
+    left: calc(50vw - 500px);
+    top: calc(50vh - 400px);
+}
+#start{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, button{
+    font-size: 3em;
+    text-align: center;
+
+
+}
+.repeatButton{
+    height: 100px;
+    margin-top: 35%;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: orange;
+}
+input{
+    border-radius: 25px;
+    outline: none;
+}
+button{
+    padding: 0.4em;
+    border-radius: 25px;
+    outline: none;
+    background-color: cornflowerblue;
+}
+button:active{
+    background-color: blue;
+}
+.panel{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+#game{
+    background-image: url("../img/bubble.png");
+
+}
+
+#result, #game{
+    display: none;
+}
+
+/* РЫБЫ */
+.fish{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/ribka.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 100px;
+    top: 100px;
+    animation: fish 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fish1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/648090.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 100px;
+    top: 100px;
+    animation: fish1 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fish {
+    0%{
+        left: 0;
+        top: 100px;
+    }
+    25%{
+        left: 300px;
+        top: 500px;
+    }
+    50%{
+        left: 500px;
+        top: 300px;
+    }
+    75%{
+        left: 700px;
+        top: 400px;
+    }
+    100%{
+        left: 100px;
+        top: 200px;
+    }
+    
+}
+
+@keyframes fish1 {
+    0%{
+        left: 500px;
+        top: 60px;
+    }
+    25%{
+        left: 500px;
+        top: 300px;
+    }
+    50%{
+        left: 400px;
+        top: 400px;
+    }
+    75%{
+        left: 200px;
+        top: 50px;
+    }
+    100%{
+        left: 100px;
+        top: 600px;
+    }
+
+}
